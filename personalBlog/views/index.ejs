@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Blog</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+<h1>My Blog Platform</h1>
+
+<a href="/add">Write New Blog</a>
+
+<ul>
+<% blogs.forEach(function(blog, index){ %>
+
+<li>
+<h2><%= blog.title %></h2>
+
+<a href="/blog/<%= index %>">Read</a>
+<a href="/edit/<%= index %>">Edit</a>
+<a href="/delete/<%= index %>">Delete</a>
+
+</li>
+
+<% }) %>
+
+</ul>
+
+</body>
+</html>

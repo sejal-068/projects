@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View in Detail</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="user">
+    <p style="font-style: italic">@<%=user.username%></p>
+    <ul>
+        <% for(item of user.todos){ %>
+            <li>
+                <h4><%=item.title%></h4>
+            <p desc><%=item.description%></p>
+           <a href="/Edit/<%=item.todoId%>">Edit</a>
+           <form action="/users/<%=item.todoId%>?_method=DELETE" method="post" style="display: inline;">
+        <button type="submit" >Delete </button>
+        </form>
+           </li>
+        <% } %>
+        
+    </ul>
+  
+    
+ </div>
+</body>
+</html>

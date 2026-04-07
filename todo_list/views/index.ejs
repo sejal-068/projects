@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+      <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <h1>Todo List</h1>
+   <% for(todo of  todoAppData){ %>
+    <div class="user">
+     <h3>@<%=todo.username%></h3>
+     <ul>
+        <% for(item of todo.todos){ %>
+            <li><%=item.title%>
+            
+        </li>
+        <% } %>
+     </ul>
+     <a href="http://localhost:8080/user/<%=todo.userId%>/show">ViewDetail</a>
+     
+      </div>
+   <% } %>
+   <a href="http://localhost:8080/login">Login</a>
+  
+
+</body>
+</html>

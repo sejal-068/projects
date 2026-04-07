@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My Tasks</h1>
+
+<a href="/logout">Logout</a>
+
+<form action="/tasks/add" method="POST">
+<input type="text" name="task" placeholder="Enter task">
+<button>Add</button>
+</form>
+
+<ul>
+<% tasks.forEach(function(task, index){ %>
+<li>
+<%= task %>
+<a href="/tasks/delete/<%= index %>">Delete</a>
+</li>
+<% }) %>
+</ul>
+
+</body>
+</html>

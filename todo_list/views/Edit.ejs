@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit list</title>
+</head>
+<body>
+    <h1>Edit Your List</h1>
+    <form  method="post" action="/users/edit/<%=todo.todoId%>?_method=PATCH">
+      
+    <p> todo_id : <%=todo.todoId%></p>
+  
+    <textarea rows="3" cols="35" name="title"><%=item.title%></textarea><br><br>
+  <textarea rows="7" cols="35" name="description"><%=item.description%></textarea>
+  <button type="submit">Update</button>
+
+</form>
+
+
+  
+</body> 
+</html>
+
+

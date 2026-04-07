@@ -1,0 +1,24 @@
+body{
+    display : flex;
+    
+    justify-content: center;
+    align-items: center;
+    height :100vh;
+    
+    
+}
+#clock{
+    display :flex;
+    /* height: 300px;
+    width: 300px; */
+    padding: 100px;
+    font-size: large;
+    border:  2px solid black ;
+    
+    /* border-radius: 50%; */
+    justify-content: center;
+   align-items : center;
+    background-color: lightgray;
+    color: darkblue;
+    font-size: 50px;
+}

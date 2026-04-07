@@ -1,0 +1,44 @@
+/* .user{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+
+.loginBox{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.loginBox form{
+    display: flex;
+    flex-direction: column;
+   
+    gap: 15px;
+    padding: 30px;
+    border: 2px solid black;
+    text-align: center;
+    align-items: center;
+}
+
+#btn{
+    height: 20px;
+    width:100px;
+
+    
+    display: flex;
+    justify-content: center;
+   
+}
+
+.user{
+    background-color:aquamarine;
+}
+
+.user form{
+      background-color:aquamarine;
+}

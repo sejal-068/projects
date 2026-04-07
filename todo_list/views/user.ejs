@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>userlogin</title>
+      <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h2>user login</h2>
+    <div class="user">
+    <p style="font-style: italic">@<%=user.username%></p>
+    <form action ="users/login/<%=user.userId%>" method="post">
+       <ul>
+        <% for(item of user.todos){ %>
+            <li><%=item.title%></li>
+            <p desc><%=item.description%></p>
+        <% } %>
+    </ul>
+    </form>
+    
+ </div>
+
+</body>
+</html>
