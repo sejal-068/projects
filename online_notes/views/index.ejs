@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Notes Manager</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+<h1>My Notes</h1>
+
+<a href="/add">Add Note</a>
+
+<ul>
+<% notes.forEach(function(note, index){ %>
+
+<li>
+<h3><%= note.title %></h3>
+<p><%= note.content %></p>
+
+<a href="/edit/<%= index %>">Edit</a>
+<a href="/delete/<%= index %>">Delete</a>
+
+</li>
+
+<% }) %>
+
+</ul>
+
+</body>
+</html>
